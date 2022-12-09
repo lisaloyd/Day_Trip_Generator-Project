@@ -1,1 +1,3 @@
-print("hello")
+destinations = ["Pensacola", "Cyprus", "Colorado Springs", "Dallas"]
+
+
