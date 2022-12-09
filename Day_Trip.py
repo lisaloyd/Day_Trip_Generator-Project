@@ -1,11 +1,15 @@
+
+
 destinations = ["Pensacola", "Cyprus", "Colorado Springs", "Dallas"]
 restaurants = ["La Cabana", "Burgers and More", "Fresh Garden", "Garcia's"]
 transportation = ["car", "plane", "train", "helicopter"]
 entertainment = ["circus", "boat rides", "parachuting", "hiking"]
 
-day_trip = ["destinations", "restaurants", "transportation", "entertainment"]
+list_of_items = ["destinations", "restaurants", "transportation", "entertainment"]
 
-
+import random
+list_of_items = random.sample(destinations, 1) + random.sample(restaurants, 1) + random.sample(transportation, 1) + random.sample(entertainment, 1)
+print(list_of_items)
 
 
 
@@ -20,7 +24,6 @@ day_trip = ["destinations", "restaurants", "transportation", "entertainment"]
 # def print_full_trip(list_of_options):
 # def generate_random_item(list_of_items):
 # def determine_satisfaction(current_trip, trip_options):
-# def re_select_option(current_trip, options):
 # def re_select_option(current_trip, options):
 
 # run_day_trip_generator()
