@@ -1,15 +1,23 @@
+def generate_random_item(list_of_items):
+    result = list_of_items
+    return result
 
 
-destinations = ["Pensacola", "Cyprus", "Colorado Springs", "Dallas"]
+destinations = ["Destination: Pensacola", "Destination: Cyprus", "Destination: Colorado Springs", "Destination: Dallas"]
 restaurants = ["La Cabana", "Burgers and More", "Fresh Garden", "Garcia's"]
 transportation = ["car", "plane", "train", "helicopter"]
 entertainment = ["circus", "boat rides", "parachuting", "hiking"]
 
-list_of_items = ["destinations", "restaurants", "transportation", "entertainment"]
-
 import random
-list_of_items = random.sample(destinations, 1) + random.sample(restaurants, 1) + random.sample(transportation, 1) + random.sample(entertainment, 1)
-print(list_of_items)
+list_of_items = ["destinations", "restaurants", "transportation", "entertainment"]
+trip_options = random.sample(destinations, 1) + random.sample(restaurants, 1) + random.sample(transportation, 1) + random.sample(entertainment, 1)
+    
+
+
+for trip_option in trip_options:
+    list_of_items =  random.sample(destinations, 1) + random.sample(restaurants, 1) + random.sample(transportation, 1) + random.sample(entertainment, 1)
+    print(*list_of_items)
+
 
 
 
