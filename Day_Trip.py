@@ -2,24 +2,48 @@ def generate_random_item(list_of_items):
     result = list_of_items
     return result
 
-
 destinations = ["Destination: Pensacola", "Destination: Cyprus", "Destination: Colorado Springs", "Destination: Dallas"]
-restaurants = ["La Cabana", "Burgers and More", "Fresh Garden", "Garcia's"]
-transportation = ["car", "plane", "train", "helicopter"]
-entertainment = ["circus", "boat rides", "parachuting", "hiking"]
+restaurants = ["Restaurants: La Cabana", "Restaurants: Burgers and More", "Restaurants: Fresh Garden", "Restaurants: Garcia's"]
+transportation = ["Transportation: car", "Transportation: plane", "Transportation: train", "Transportation: helicopter"]
+entertainment = ["Entertainment: circus", "Entertainment: boat rides", "Entertainment: parachuting", "Entertainment: hiking"]
+list_of_items = ["destinations", "restaurants", "transportation", "entertainment"]
 
 import random
-list_of_items = ["destinations", "restaurants", "transportation", "entertainment"]
-trip_options = random.sample(destinations, 1) + random.sample(restaurants, 1) + random.sample(transportation, 1) + random.sample(entertainment, 1)
+print(random.choice(destinations))
+
+import random
+print(random.choice(restaurants))
+
+import random
+print(random.choice(transportation))
+
+import random
+print(random.choice(entertainment))
+
+#results = random.choice(destinations) + random.choice(restaurants) + random.choice(transportation) + random.choice(entertainment)
+
+user_input = input("Are you satisfied with your trip? Y or N ")
+if user_input == "Y":
+  print("Here is your final trip! Enjoy!")
+elif user_input == "N" :
+  print("Which option would you like to change? destinations, restaurants, transportation, entertainment")
+
+
+
+#choice = random.choice(list_of_items)
+#print(choice)
+
+#import random
+#trip_options = random.sample(destinations, 1) + random.sample(restaurants, 1) + random.sample(transportation, 1) + random.sample(entertainment, 1)
     
 
 
-for trip_option in trip_options:
-    list_of_items =  random.sample(destinations, 1) + random.sample(restaurants, 1) + random.sample(transportation, 1) + random.sample(entertainment, 1)
-    print(*list_of_items)
+#for trip_option in trip_options:
+ #   list_of_items =  random.sample(destinations, 1) + random.sample(restaurants, 1) + random.sample(transportation, 1) + random.sample(entertainment, 1)
+  #  print(*list_of_items)
 
 
-
+# 
 
 
 # random.sample()
