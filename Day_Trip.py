@@ -20,21 +20,30 @@ list_of_items = ["destinations", "restaurants", "transportation", "entertainment
 #import random
 #print(random.choice(entertainment))
 
-import random
-user_response = "N"
 
-while user_response != "Y":
  # print(random.choice(destinations))
   #print(random.choice(restaurants))
   #print(random.choice(transportation))
   #print(random.choice(entertainment))
-  
-  results = random.choice(destinations) + '\n' + random.choice(restaurants) + '\n' + random.choice(transportation) + '\n' + random.choice(entertainment)
-  print(results)
-  user_response = input('Are you satisfied with your trip? Y or N ')
-  print ()
+
+import random
+
+ #while user_response != "Y":
+
+results = random.choice(destinations) + '\n' + random.choice(restaurants) + '\n' + random.choice(transportation) + '\n' + random.choice(entertainment)
+print(results)
+user_response = input('Are you satisfied with your trip? Y or N ')
+print ()
+
+if user_response == "Y":
   print('Here is your final trip! Have fun!')
   print(f'{results}')
+
+elif user_response == "N":
+  print("Which option would you like to change? destinations, restaurants, transportation, entertainment ")
+
+
+
 #user_response = "N"
 
 #while user_response != "Y":
