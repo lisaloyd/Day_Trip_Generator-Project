@@ -28,8 +28,6 @@ list_of_items = ["destinations", "restaurants", "transportation", "entertainment
 
 import random
 
- #while user_response != "Y":
-
 results = random.choice(destinations) + '\n' + random.choice(restaurants) + '\n' + random.choice(transportation) + '\n' + random.choice(entertainment)
 print(results)
 user_response = input('Are you satisfied with your trip? Y or N ')
@@ -40,8 +38,14 @@ if user_response == "Y":
   print(f'{results}')
 
 elif user_response == "N":
-  print("Which option would you like to change? destinations, restaurants, transportation, entertainment ")
+  next_user_response = input("Which option would you like to change? destinations, restaurants, transportation, entertainment ")
 
+if next_user_response == "destinations":
+  rejected_destination = destinations.pop(destinations.index(random.choice(destinations)))
+print(f'{results}')
+
+
+# print(list1.pop(list1.index(random.choice(list1))))
 
 
 #user_response = "N"
