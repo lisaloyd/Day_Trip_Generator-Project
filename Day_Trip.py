@@ -8,25 +8,45 @@ transportation = ["Transportation: car", "Transportation: plane", "Transportatio
 entertainment = ["Entertainment: circus", "Entertainment: boat rides", "Entertainment: parachuting", "Entertainment: hiking"]
 list_of_items = ["destinations", "restaurants", "transportation", "entertainment"]
 
-import random
-print(random.choice(destinations))
+#import random
+#print(random.choice(destinations))
+
+#import random
+#print(random.choice(restaurants))
+
+#import random
+#print(random.choice(transportation)
+
+#import random
+#print(random.choice(entertainment))
 
 import random
-print(random.choice(restaurants))
+user_response = "N"
 
-import random
-print(random.choice(transportation))
+while user_response != "Y":
+ # print(random.choice(destinations))
+  #print(random.choice(restaurants))
+  #print(random.choice(transportation))
+  #print(random.choice(entertainment))
+  
+  results = random.choice(destinations) + '\n' + random.choice(restaurants) + '\n' + random.choice(transportation) + '\n' + random.choice(entertainment)
+  print(results)
+  user_response = input('Are you satisfied with your trip? Y or N ')
+  print ()
+  print('Here is your final trip! Have fun!')
+  print(f'{results}')
+#user_response = "N"
 
-import random
-print(random.choice(entertainment))
+#while user_response != "Y":
+  #random_suspect = random.choice(suspects)
+  #user_response = input(f"is {random_suspect} the perpetrator? )
+  #print(f[random_suspect] has been detained.)
 
-#results = random.choice(destinations) + random.choice(restaurants) + random.choice(transportation) + random.choice(entertainment)
-
-user_input = input("Are you satisfied with your trip? Y or N ")
-if user_input == "Y":
-  print("Here is your final trip! Enjoy!")
-elif user_input == "N" :
-  print("Which option would you like to change? destinations, restaurants, transportation, entertainment")
+#user_input = input("Are you satisfied with your trip? Y or N ")
+#if user_input == "Y":
+ # print("Here is your final trip! Enjoy!")
+#elif user_input == "N" :
+ # print("Which option would you like to change? destinations, restaurants, transportation, entertainment")
 
 
 
