@@ -33,16 +33,38 @@ print(results)
 user_response = input('Are you satisfied with your trip? Y or N ')
 print ()
 
-if user_response == "Y":
-  print('Here is your final trip! Have fun!')
-  print(f'{results}')
-
-elif user_response == "N":
+if user_response == "N":
   next_user_response = input("Which option would you like to change? destinations, restaurants, transportation, entertainment ")
 
 if next_user_response == "destinations":
   rejected_destination = destinations.pop(destinations.index(random.choice(destinations)))
 print(f'{results}')
+print ()
+
+if next_user_response == "restaurants":
+  rejected_restaurant = restaurants.pop(restaurants.index(random.choice(restaurants)))
+print(f'{results}')
+print ()
+
+if next_user_response == "transportation":
+  rejected_transportation = transportation.pop(transportation.index(random.choice(transportation)))
+print(f'{results}')
+print ()
+
+if next_user_response == "entertainment":
+  rejected_entertainment = entertainment.pop(entertainment.index(random.choice(entertainment)))
+print(f'{results}')
+print ()
+
+else user_response == "Y":
+print('Here is your final trip! Have fun!')
+print(f'{results}')
+
+
+if next_user_response == "destinations":
+  rejected_destination = destinations.pop(destinations.index(random.choice(destinations)))
+print(f'{results}')
+print ()
 
 
 # print(list1.pop(list1.index(random.choice(list1))))
