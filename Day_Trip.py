@@ -8,59 +8,67 @@ transportation = ["Transportation: car", "Transportation: plane", "Transportatio
 entertainment = ["Entertainment: circus", "Entertainment: boat rides", "Entertainment: parachuting", "Entertainment: hiking"]
 list_of_items = ["destinations", "restaurants", "transportation", "entertainment"]
 
-#import random
-#print(random.choice(destinations))
-
-#import random
-#print(random.choice(restaurants))
-
-#import random
-#print(random.choice(transportation)
-
-#import random
-#print(random.choice(entertainment))
-
-
- # print(random.choice(destinations))
-  #print(random.choice(restaurants))
-  #print(random.choice(transportation))
-  #print(random.choice(entertainment))
 
 import random
-
 results = random.choice(destinations) + '\n' + random.choice(restaurants) + '\n' + random.choice(transportation) + '\n' + random.choice(entertainment)
 print(results)
 user_response = input('Are you satisfied with your trip? Y or N ')
-print ()
+print()
 
-if user_response == "N":
-    print(input("Which option would you like to change? destinations, restaurants, transportation, entertainment "))
-
-elif user_response == "destinations":
-  rejected_destination = destinations.pop(destinations.index(random.sample(destinations)))
-print(f'{results}')
-print ()
-user_response = input('Are you satisfied with your trip? Y or N ')
-print ()
-
-if user_response == "restaurants":
-  rejected_restaurant = restaurants.pop(restaurants.index(random.choice(restaurants)))
-print(f'{results}')
-print ()
-
-if user_response == "transportation":
-  rejected_transportation = transportation.pop(transportation.index(random.choice(transportation)))
-print(f'{results}')
-print ()
-
-if user_response == "entertainment":
-  rejected_entertainment = entertainment.pop(randrange(len(entertainment)))
-print(f'{results}')
-print ()
+if user_response =="N":
+  print(input("Which option would you like to change? destinations, restaurants, transportation, entertainment "))
+print()
 
 if user_response == "Y":
   print('Here is your final trip! Have fun!')
 print(f'{results}')
+
+
+if user_response == "destinations":
+  destinations = destinations.pop(destinations.index(random.choice(destinations)))
+  print(results)
+  user_input = (input('Are you satisfied with your trip? Y or N '))
+
+if user_response == "restaurants":
+  rejected_restaurant = restaurants.pop(restaurants.index(random.choice(restaurants)))
+print(f'{results}')
+print()
+
+if user_response == "transportation":
+ rejected_transportation = transportation.pop(transportation.index(random.choice(transportation)))
+print(f'{results}')
+print()
+user_response = input('Are you satisfied with your trip? Y or N ')
+print()
+
+
+if user_response == "entertainment":
+ rejected_entertainment = entertainment.pop(random.choice(len(entertainment)))
+print(f'{results}')
+
+
+
+
+
+#if user_response == "transportation":
+ # rejected_transportation = random.choice(transportation)
+  #transportation.remove(rejected_transportation)
+#print(f'{results}')
+#print()
+#user_response = input('Are you satisfied with your trip? Y or N ')
+#print()
+
+#
+
+
+
+
+
+#import random
+#my_list = ['bird', 'fish', 'insect', 'reptile', 'mammal']
+#for i in range(0,len(my_list)):
+ #   my_list.remove(random.choice(my_list))
+  #  print(my_list)
 
  #random_element = a_list.pop(randrange(len(a_list)))
 
